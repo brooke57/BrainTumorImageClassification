@@ -33,5 +33,9 @@ Throughout this convolutional neural network modeling process, many different it
 With such high accuracy, recall, and precision, it is safe to say that this neural network model would be very competent at flagging scans which require further analysis by physicians, potentially giving them more time and energy to focus on other patients. Additionally, it would be a good support tool for physicians learning how to detect brain tumors. These results together have the potential to improve health outcomes for patients in developing nations. 
 
 ## Further Steps
+One of the most important future steps to be taken is deployment of this neural network model, perhaps in the form of a web app accessible to the relevant mdeical personell. Another very valuable step to be taken is to develop a multiclass classification neural network, which would be able to distinguish between the different main brain tumor types (glioma, meningioma, and pituitary).
+
 
 ## Information
+
+- For information regarding the resorting of images from the kaggle dataset to be a binary classification problem, please see [this notebook](https://github.com/brooke57/BrainTumorImageClassification/blob/main/Renaming_Tumor_Images.ipynb), and please see the top of the [final notebook](https://github.com/brooke57/BrainTumorImageClassification/blob/main/Final_Binary_Brain_Tumor_Classification.ipynb) for details on how to load the data onto Google Colab.
