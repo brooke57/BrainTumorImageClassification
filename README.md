@@ -26,8 +26,7 @@ Because a total of 2,870 files (number of files in the training set) is a pretty
 ## Modeling Results
 Throughout this convolutional neural network modeling process, many different iterations were run. In the end, the iteration called "Incorporating Class Weights into Pretrained VGG-19 (Final Model)" yielded the best results. This model iteration has a base that is a pretrained VGG-19 network, with a flatten layer and two dense layers on top, and all of the VGG-19 layers frozen. It accounts for class weights, giving the minority class of "no tumor" images a weight of three.  This model iteration had a validation accuracy of 97%, a loss of 7%, recall of 100%, and a precision of 97%. The resulting confusion matrix is shown below, where it is clear that true positives and true negatives are being maximized. 
 
-
-![Screen Shot 2021-12-04 at 9 56 02 PM](https://user-images.githubusercontent.com/68525050/144756495-13452643-c6b9-4bb2-a19d-ab43fc01e001.png)
+![Screen Shot 2021-12-06 at 4 54 42 PM](https://user-images.githubusercontent.com/68525050/144935960-8f8e0eb6-6170-4665-a474-8fa4605fb249.png)
 
 # Conclusions
 With such high accuracy, recall, and precision, it is safe to say that this neural network model would be very competent at helping physicians more quickly and accurately detect brain tumors and flag scans which require further analysis by neurosurgeons, potentially giving them more time and energy to focus on other patients. Additionally, it would be a good support tool for physicians learning how to detect brain tumors. These results together have the potential to improve health outcomes for patients in developing nations. 
