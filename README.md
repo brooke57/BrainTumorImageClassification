@@ -37,5 +37,5 @@ One of the most important future steps to be taken is deployment of this neural 
 
 ## Information
 
-- For information regarding the resorting of images from the kaggle dataset to be a binary classification problem, please see [this notebook](https://github.com/brooke57/BrainTumorImageClassification/blob/main/Renaming_Tumor_Images.ipynb), and please see the top of the [final notebook](https://github.com/brooke57/BrainTumorImageClassification/blob/main/Final_Binary_Brain_Tumor_Classification.ipynb) for details on how to load the data onto Google Colab.
+- For information regarding the resorting of images from the kaggle dataset to be a binary classification problem, please see [this notebook](https://github.com/brooke57/BrainTumorImageClassification/blob/main/Supplemental_Notebooks/Renaming_Tumor_Images.ipynb), and please see the top of the [final notebook](https://github.com/brooke57/BrainTumorImageClassification/blob/main/Final_Binary_Brain_Tumor_Classification.ipynb) for details on how to load the data onto Google Colab.
 - To see all models that were run, in addition to the ones in the final notebook, go to the ["All_Models_for_Binary_Brain_Tumor_Classification.ipynb](https://github.com/brooke57/BrainTumorImageClassification/blob/main/Supplemental_Notebooks/All_Models_for_Binary_Brain_Tumor_Classification.ipynb) notebook.
