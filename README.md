@@ -13,8 +13,7 @@ This data is composed of a series of Brain MRIs consisting of scans which contai
 
 Another thing to be aware of in the modeling process are the two types of error that the neural network model can make; false positives and false negatives. A false positive occurs when the model identifies a normal MRI scan as having a tumor, and a false negative occurs when a MRI scan with a tumor is identified by the model as normal. In this case, a false negative is worse than a false positive, because this means that a petient who has a brain tumor does not get treatment, and could develop worse health problems. It is ideal to minimize both errors, but during the modeling process I focused more on minimizing false negatives.
 
-![Screen Shot 2021-12-01 at 3 29 58 PM](https://user-images.githubusercontent.com/68525050/144320555-36f6254c-4104-4cb2-a399-a543ff9bfc66.png)
-
+![Screen Shot 2021-12-08 at 2 11 51 PM](https://user-images.githubusercontent.com/68525050/145277556-9568d454-72af-4b66-bd2a-e8a09abb5785.png)
 
 ## Preprocessing
 In order to maximize GPU time for running Neural Networks (since convolutional neural networks require lots of computational power), I ultimately ended up working on Google Colab for the Final Notebook, although I did begin working with this data on kaggle. 
@@ -27,10 +26,10 @@ Because a total of 2,870 files (number of files in the training set) is a pretty
 ## Modeling Results
 Throughout this convolutional neural network modeling process, many different iterations were run. In the end, the iteration called "Incorporating Class Weights into Pretrained VGG-19 (Final Model)" yielded the best results. This model iteration has a base that is a pretrained VGG-19 network, with a flatten layer and two dense layers on top, and all of the VGG-19 layers frozen. It accounts for class weights, giving the minority class of "no tumor" images a weight of three.  This model iteration had a validation accuracy of 97%, a loss of 7%, recall of 100%, and a precision of 97%. The resulting confusion matrix is shown below, where it is clear that true positives and true negatives are being maximized. 
 
-![Screen Shot 2021-12-06 at 4 54 42 PM](https://user-images.githubusercontent.com/68525050/144935960-8f8e0eb6-6170-4665-a474-8fa4605fb249.png)
+![Screen Shot 2021-12-08 at 2 14 30 PM](https://user-images.githubusercontent.com/68525050/145277925-f60aa1d2-00f3-4945-88a6-94ff6476d61a.png)
 
 # Conclusions
-With such high accuracy, recall, and precision, it is safe to say that this neural network model would be very competent at helping physicians more quickly and accurately detect brain tumors and flag scans which require further analysis by neurosurgeons, potentially giving them more time and energy to focus on other patients. Additionally, it would be a good support tool for physicians learning how to detect brain tumors. These results together have the potential to improve health outcomes for patients in developing nations. 
+With such high accuracy, recall, and precision, it is safe to say that this neural network model would serve as a competent supplementary tool for physicians, physician assistants, and nurses whose specialty may not be may be in brain tumor detection. It would help them more quickly and accurately detect brain tumors and flag scans which require further analysis by neurosurgeons, potentially giving them more time and energy to focus on other patients. These results together have the potential to improve health outcomes for patients in developing nations. 
 
 ## Further Steps
 One of the most important future steps to be taken is deployment of this neural network model, perhaps in the form of a web app accessible to the relevant mdeical personell. Another very valuable step to be taken is to develop a multiclass classification neural network, which would be able to distinguish between the different main brain tumor types (glioma, meningioma, and pituitary).
