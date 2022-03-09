@@ -29,7 +29,8 @@ Throughout this convolutional neural network modeling process, many different it
 **Multiclass Classification Results**
 I once again used the pretrained VGG-19 Network. The iteration which produced the best results yielded an accuracy of 78%, recall of 73%, precision of 85%, and an F1 score of 78%. The model was better at correctly identifying some tumor types than others; it correctly identified 83% of no tumor scans, 90% of pituitary tumors, 55% of Meningiomas, and 69% of Gliomas.
 
-![Screen Shot 2022-02-08 at 11 26 09 PM](https://user-images.githubusercontent.com/68525050/153128604-aada37d5-7fda-4147-94f1-8b2215b46817.png)
+![Screen Shot 2022-03-03 at 4 18 36 PM](https://user-images.githubusercontent.com/68525050/157532794-d34a176d-db23-4be0-92e4-3dd2a2ad32ce.png)
+
 
 ## Model Interpretability
 
