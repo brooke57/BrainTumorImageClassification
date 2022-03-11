@@ -24,7 +24,7 @@ I chose to preprocess the images using the ImageDataGenerator from Keras, which 
 **Binary Classification Results**\
 Throughout this convolutional neural network modeling process, many different iterations were run. In the end, the iteration called "Incorporating Class Weights into Pretrained VGG-19 (Final Model)" yielded the best results. This model iteration has a base that is a pretrained VGG-19 network, with a flatten layer and two dense layers on top, and all of the VGG-19 layers frozen. It accounts for class weights, giving the minority class of "no tumor" images a weight of three.  This model iteration had a validation accuracy of 95%, a loss of 12%, recall of 100%, and a precision of 95%. The resulting confusion matrix is shown below, where it is clear that true positives and true negatives are being maximized. 
 
-![Screen Shot 2022-02-08 at 10 11 00 PM](https://user-images.githubusercontent.com/68525050/153120742-29ad7a43-c746-40d5-9a89-738c2fba74d2.png)
+![Screen Shot 2022-03-10 at 8 14 45 PM](https://user-images.githubusercontent.com/68525050/157790157-06b10f18-53f3-403c-8aa8-74d9b1f797ed.png)
 
 **Multiclass Classification Results**
 I once again used the pretrained VGG-19 Network. The iteration which produced the best results yielded an accuracy of 78%, recall of 73%, precision of 85%, and an F1 score of 78%. The model was better at correctly identifying some tumor types than others; it correctly identified 83% of no tumor scans, 90% of pituitary tumors, 55% of Meningiomas, and 69% of Gliomas.
